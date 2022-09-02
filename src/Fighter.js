@@ -15,9 +15,9 @@ class Fighter {
    * Launch a strike
    * @param Fighter defender
    */
-  fight(defender) {
-    const attackPoints = this.getRandomInt(this.getDamage());
-    const damages = Math.max(attackPoints - this.getDefense(defender), 0);
+ fight(defender) {
+    let attackPoints = this.getRandomInt(this.getDamage());
+    let damages = Math.max(attackPoints - defender.getDefense(), 0)
     defender.life = Math.max(defender.life - damages, 0);
   }
 
