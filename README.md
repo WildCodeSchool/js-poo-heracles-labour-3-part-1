@@ -4,7 +4,8 @@ Prerequisite: clone this *repository*.
 
 
 > To begin, let's have a quick look at the code. In this new challenge, we will integrate an HTML interface to improve our game.
-So you will find an *index.html* file and a linked *style.css* file. At the bottom of the *index.html*, you will find the imports of the different *js* files. Please note that the order is important.
+So you will find an *index.html* file and a linked *style.css* file. 
+You will notice that all of our class files no longer need to be exported as modules, and we no longer import them into our *index.js* file. All the import logic now happens at the bottom of our *index.html* file. BE CAREFUL, the order of the files is therefore very IMPORTANT.
 In the *index.html* file, there is almost nothing. The html templates are prepared and injected directly, as the objects are implemented. You can browse them but you do not need to touch them in the process of the workshop. However, you will be ask to consume some of its features.
 
 > The HTML `Hero` zone is created directly from the *index.js (line 18 to 20)*.

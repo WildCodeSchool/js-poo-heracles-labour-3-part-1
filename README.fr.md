@@ -4,7 +4,8 @@ Prérequis : cloner ce *repository*.
 
 
 > Pour commencer, réalisons un petit tour du propriétaire. Dans cette nouvelle épreuve, nous allons intégrer une interface HTML pour améliorer notre jeu.
-Tu trouveras donc un fichier *index.html* et un fichier *style.css* lié. En bas du index.html, tu trouveras les imports des différents fichiers *js*. Attention, l'ordre est important.
+Tu trouveras donc un fichier *index.html* et un fichier *style.css* lié. 
+Tu remarqueras ainsi que tous nos fichiers de classe n'ont plus besoin d'être exporter en tant que modules, et nous ne les importont plus dans notre fichier *index.js*. Toute la logique d'importation se passe donc en bas de notre fichier *index.html*. ATTENTION, l'ordre des fichiers est donc très IMPORTANT.
 Dans le fichier *index.html*, il n'y a presque rien. Les templates html sont préparés et injectés directement, au fur et à mesure de l'implémentation des objets. Tu peux les parcourir mais tu n'as pas besoin d'y toucher pour le fonctionnement du workshop. Tu seras par contre amené à consommer certaines de ces fonctionnalités.
 
 > La zone `Hero` du HTML est directement crée à partir du *index.js (ligne 18 à 20)*.
