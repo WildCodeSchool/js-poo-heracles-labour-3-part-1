@@ -5,7 +5,9 @@ const heracles = new Hero('👨 Heracles', 20, 6, './images/heracles.svg', 2, 2)
 
 /** Creating his weapon and associating it */
 const weapon = new Weapon('sword', 10, './images/sword.svg');
-heracles.weapon = weapon;
+const bow = new Weapon('bow', 8, './images/bow.svg', 5);
+// heracles.weapon = weapon;
+heracles.weapon = bow;
 
 /** Creating his shield and associating it */
 const shield = new Shield('shield', 10, './images/shield.svg');
@@ -13,7 +15,7 @@ heracles.shield = shield;
 
 /** Creating all of his adversaries */
 // const monsters = [new Monster('Alpha', 25, 12, './images/bird.svg', 4, 4), new Monster('Charlie', 25, 12, './images/bird.svg', 6, 6), new Monster('Tango', 25, 12, './images/bird.svg', 8, 8)];
-const bird1 = new Monster('Bird', 25, 12, './images/bird.svg', 4, 4);
+const bird1 = new Monster('Bird', 25, 12, './images/bird.svg', 3, 3);
 const bird2 = new Monster('Bird', 25, 12, './images/bird.svg', 6, 6);
 const bird3 = new Monster('Bird', 25, 12, './images/bird.svg', 8, 8);
 const monsters = [bird1, bird2, bird3];
