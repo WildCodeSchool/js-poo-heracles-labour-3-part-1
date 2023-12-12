@@ -1,7 +1,10 @@
 /** Part for the starting instanciation */
+const ranPosition = () => {
+  return Math.floor(Math.random() * 9) + 1;
+}
 
 /** creating the hero Heracles */
-const heracles = new Hero('👨 Heracles', 20, 6, './images/heracles.svg', 2, 2);
+const heracles = new Hero('👨 Heracles', 20, 6, './images/heracles.svg', ranPosition(), ranPosition());
 
 /** Creating his weapon and associating it */
 const weapon = new Weapon('sword', 10, './images/sword.svg');
@@ -14,12 +17,11 @@ const shield = new Shield('shield', 10, './images/shield.svg');
 heracles.shield = shield;
 
 /** Creating all of his adversaries */
-// const monsters = [new Monster('Alpha', 25, 12, './images/bird.svg', 4, 4), new Monster('Charlie', 25, 12, './images/bird.svg', 6, 6), new Monster('Tango', 25, 12, './images/bird.svg', 8, 8)];
-const bird1 = new Monster('Bird', 25, 12, './images/bird.svg', 3, 3);
-const bird2 = new Monster('Bird', 25, 12, './images/bird.svg', 6, 6);
-const bird3 = new Monster('Bird', 25, 12, './images/bird.svg', 8, 8);
+const bird1 = new Monster('Bird', 25, 12, './images/bird.svg', ranPosition(), ranPosition());
+const bird2 = new Monster('Bird', 25, 12, './images/bird.svg', ranPosition(), ranPosition());
+const bird3 = new Monster('Bird', 25, 12, './images/bird.svg', ranPosition(), ranPosition());
 const monsters = [bird1, bird2, bird3];
-console.log(monsters);
+// console.log(monsters);
 
 /** Creating the hero section in the html */
 const fighterHtml = new FightersTemplate('fighters');

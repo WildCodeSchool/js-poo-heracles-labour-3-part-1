@@ -5,6 +5,10 @@ class Hero extends Fighter {
       this.shield = shield || null;
   }
 
+  fight() {
+    return super.fight();
+  }
+
   getRange() {
     return this.weapon ? super.getRange() + this.weapon.range : super.getRange();
   }
@@ -15,16 +19,20 @@ class Hero extends Fighter {
 
   // Get Protection from the shield if the shield is assigned
   getShieldProtection() {
-      return this.shield ? this.shield.protection : 0;
+    return this.shield ? this.shield.protection : 0;
   }
 
   // Method to calculate Damage done (Fighter Strength + Weapon Damage)
   getDamage() {
-      return super.getDamage() + this.getWeaponDamage();
+    return super.getDamage() + this.getWeaponDamage();
   };
 
   // Method to calculate Defense achieved (Fighter Dexterity + Shield Protection)    
   getDefense() {
-      return super.getDefense() + this.getShieldProtection();
+    return super.getDefense() + this.getShieldProtection();
   };
+
+  isAlive() {
+    return super.isAlive();
+  }
 }

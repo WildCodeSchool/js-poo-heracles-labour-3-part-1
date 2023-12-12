@@ -3,11 +3,19 @@ class Monster extends Fighter {
       super(name, strength, dexterity, image, x, y, life);
   }
 
+  fight() {
+    return super.fight();
+  }
+
   getDamage() {
-    super.getDamage();
+    return super.getDamage();
   }
 
   getDefense() {
-    super.getDefense();
+    return super.getDefense();
+  }
+
+  isAlive() {
+    return super.isAlive();
   }
 }

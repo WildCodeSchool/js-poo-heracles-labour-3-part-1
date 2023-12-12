@@ -21,7 +21,6 @@ class FightersTemplate extends TemplateRoot {
   }
 
   createTemplate(hero, enemy) {
-    console.log(hero)
     const fighterTemplate = `<div class="fighters">
       <a href="#hero">
         <figure class="heracles">
